@@ -8,7 +8,6 @@ REPO_URL = 'https://github.com/rahvar/django-list-app.git'
 
 def deploy():
   with settings(warn_only=True):
-    run('ls')
     site_folder = '/home/%s/firstdjangoapp' % (env.user,)  
     source_folder = site_folder + '/source'
     _create_directory_structure_if_necessary(site_folder)
