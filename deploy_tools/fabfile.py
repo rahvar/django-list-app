@@ -62,3 +62,4 @@ def _update_database(source_folder):
     run('cd %s && ../virtualenv/bin/python3 manage.py migrate --noinput' % (
         source_folder,
     ))
+    run('touch var/www/rv_pythonanywhere_com_wsgi.py')
